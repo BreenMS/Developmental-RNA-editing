@@ -61,3 +61,9 @@ Table S6. RNA hyper-editing, splicing , and intron retention results. <br />
 Table S7. AEI, hyper-editing, and metadata for animal models of neurodevelopment. <br /> 
 Table S8. Top temporal edQTLs. <br /> 
 Table S9. GWAS-edQTL co-localization with edQTLs.  <br /> 
+
+
+<br />  
+
+
+# Additional data files:
