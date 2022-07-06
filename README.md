@@ -1,5 +1,5 @@
 # Spatiotemporal and genetic regulation of RNA editing across human brain development
-Winston H. Cuddleston*, Xuanjia Fan*, Laura Sloofman*, Lindsay Liang*, Enrico Mossotto, Kendall Moore, Sarah Zipkowitz, Minghui Wang, Bin Zhang, Jiebiao Wang, Nenad Sestan, Bernie Devlin, Kathryn Roeder, Stephan J. Sanders, Joseph D. Buxbaum, Michael S. Breen6**
+Winston H. Cuddleston*, Xuanjia Fan*, Laura Sloofman*, Lindsay Liang*, Enrico Mossotto, Kendall Moore, Sarah Zipkowitz, Minghui Wang, Bin Zhang, Jiebiao Wang, Nenad Sestan, Bernie Devlin, Kathryn Roeder, Stephan J. Sanders, Joseph D. Buxbaum, Michael S. Breen**
 
 *Co-first authors: WHC, XF, LS, LL
 **Correspondence to: michael.breen@mssm.edu, @breenPsychgene
