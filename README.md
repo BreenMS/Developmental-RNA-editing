@@ -55,7 +55,7 @@ RNAEditingIndex -d -f -o .
 
 
 # 2. Quantify RNA editing sites from STAR mapped bam files using de novo methods:
-We used already available software from the [reditools v2.0 GitHub account](https://github.com/tizianoflati/reditools2.0) and [JACUSA2 GitHub account](https://github.com/dieterich-lab/JACUSA2) to quantify de novo RNA editing sites based on a STAR mapped bam file. The methods are describe in the original publications: [BMC Bioinformatics (2020)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03562-x) and [Genome Biology (2022)]([https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02676-0). Here, we provide two examples of how to execute reditools 2.0 and JACUSA2 on one sample. 
+We used already available software from the [reditools v2.0 GitHub account](https://github.com/tizianoflati/reditools2.0) and [JACUSA2 GitHub account](https://github.com/dieterich-lab/JACUSA2) to quantify de novo RNA editing sites based on a STAR mapped bam file. The methods are describe in the original publications: [BMC Bioinformatics (2020)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03562-x) and [Genome Biology (2022)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02676-0). Here, we provide two examples of how to execute reditools 2.0 and JACUSA2 on one sample. 
 
 <br /> 
 
