@@ -6,7 +6,11 @@ Winston H. Cuddleston*, Xuanjia Fan*, Laura Sloofman*, Lindsay Liang*, Enrico Mo
 
 Posttranscriptional RNA modifications by adenosine-to-inosine (A-to-I) editing are abundant in the brain, yet elucidating functional sites remains challenging. To bridge this gap, we expose spatiotemporal and genetically regulated A-to-I editing sites across prenatal and postnatal stages of human brain development. We identify more than 10,000 temporally regulated and spatially conserved editing sites that occur predominately in 3’UTRs and introns, as well as 37 sites that recode amino acids in protein coding regions with precise changes in editing levels across development. A massive expansion of RNA hyper-edited transcripts accumulates in the brain well into advanced age, stabilizing RNA secondary structures. These features are conserved in murine and non-human primate models of neurodevelopment. Further, we uncover thousands of cis-editing quantitative trait loci (edQTLs) with unique regulatory effects during prenatal and postnatal development. Collectively, this work offers a highly resolved atlas linking spatiotemporal variation in editing levels to genetic regulatory effects throughout distinct stages of brain maturation.  <br /> <br /> 
 
-Here we described the main computational code used to generate all results and figures in this body of work. All resulting RNA editing matrices and sample level RNA editing sites can be downloaded from [Synapse.org](https://www.synapse.org/#!Synapse:syn26434508/files/).
+![Abstract](https://user-images.githubusercontent.com/22500312/177622166-e5c1e31a-5258-4c0b-a5a2-930b324eb5b2.png)
+
+Here we described the main computational code used to generate all results and figures in this body of work.  
+
+All RNA editing matrices and sample level RNA editing sites across the DLPFC, forebrain and hindbrain can be downloaded from [Synapse.org](https://www.synapse.org/#!Synapse:syn26434508/files/). An overview of our analytical approach: 
 
 # This work entails four main levels of analysis:
 1. Compute an Alu Editing Index (AEI) from a STAR mapped bam file  [(RNAEditingIndexer v1.0)](https://github.com/a2iEditing/RNAEditingIndexer)<br /> 
