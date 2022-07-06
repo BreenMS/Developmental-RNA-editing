@@ -18,7 +18,15 @@ Here we provide all computational code, supplemental tables, and intermediate da
 We used already available software from the [RNAEditingIndexer GitHub account](https://github.com/a2iEditing/RNAEditingIndexer) to compute an AEI based on a mapped bam file. The method is describe in the original publication, [Nat. Methods (2019)](https://pubmed.ncbi.nlm.nih.gov/31636457/). Here, we provide an example of bash shell script that executes the AEI on one sample. Requirements and parameters are described in full in the bash script.  <br /> 
  
 ```ruby
-AEI.sh
+An example for running computing the AEI on human samples:
+RNAEditingIndex -d -f -o .
+--genes_expression ucscHg38GTExGeneExpression.bed.gz
+--refseq ucscHg38RefSeqCurated.bed.gz
+--snps ucscHg38CommonGenomicSNPs150.bed.gz
+-gf ucscHg38Genome.fa
+-rb ucscHg38Alu.bed.gz
+--genome UserProvided  --paired_end --stranded
+
 ```
 <br />  
 
