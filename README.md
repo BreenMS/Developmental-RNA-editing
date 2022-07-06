@@ -19,7 +19,7 @@ We used already available software from the [RNAEditingIndexer GitHub account](h
  
 An example for computing AEI on human samples:
 ```ruby
-RNAEditingIndex -d -f -o .
+RNAEditingIndex -d -f Aligned.sortedByCoord.out.bam -o .
 --genes_expression ucscHg38GTExGeneExpression.bed.gz
 --refseq ucscHg38RefSeqCurated.bed.gz
 --snps ucscHg38CommonGenomicSNPs150.bed.gz
@@ -31,7 +31,7 @@ RNAEditingIndex -d -f -o .
 
 An example for computing AEI on macaque samples:
 ```ruby
-RNAEditingIndex -d -f -o .
+RNAEditingIndex -d -f Aligned.sortedByCoord.out.bam -o .
 --genes_expression RheMac8_selectedregions_expression_avg.bed.gz
 --refseq RheMac8_refSeq.bed.gz
 --snps rheMac8_common_0.01_SNVs.bed.gz
@@ -43,7 +43,7 @@ RNAEditingIndex -d -f -o .
 
 An example for computing AEI on mouse samples:
 ```ruby
-RNAEditingIndex -d -f -o .
+RNAEditingIndex -d -f Aligned.sortedByCoord.out.bam -o .
 --genes_expression ucscMM10GTExGeneExpression.bed.gz
 --refseq ucscMM10RefSeqCurated.bed.gz
 --snps ucscMM10CommonGenomicSNPs142.bed.gz
@@ -55,15 +55,22 @@ RNAEditingIndex -d -f -o .
 
 
 # 2. Quantify RNA editing sites from STAR mapped bam files using de novo methods:
-We used already available software from the [reditools v2.0 GitHub account](https://github.com/tizianoflati/reditools2.0) and [JACUSA2 GitHub account](https://github.com/dieterich-lab/JACUSA2) to quantify de novo RNA editing sites based on a STAR mapped bam file. The methods are describe in the original publications: [BMC Bioinformatics (2020)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03562-x) and [Genome Biology (2022)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02676-0). Here, we provide two examples of how to execute reditools 2.0 and JACUSA2 on one sample. 
+We used already available software from the [reditools v2.0 GitHub account](https://github.com/tizianoflati/reditools2.0) and [JACUSA2 GitHub account](https://github.com/dieterich-lab/JACUSA2) to quantify de novo RNA editing sites based on a STAR mapped bam file. The methods are describe in the original publications: [BMC Bioinformatics (2020)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03562-x) and [Genome Biology (2022)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02676-0). Here, we provide examples of how we executed reditools 2.0 and JACUSA2 on the BrainVar data set. 
 
 <br /> 
-
+REDITOOLS 2.0
 ```ruby
-reditools_caller.sh
-```
+mpirun parallel_reditools.py -f Aligned.sortedByCoord.out.bam -r GRCh38.chrom.fa -S -s 2 -ss 5 -mrl 50 -q 10 -bq 20 -C -T 2 -m homopolymeric_sites_hg38.txt -os 5 -Z GRCh38.chrom.fa.fai -G Aligned.sortedByCoord.out.bam.cov -D Aligned.sortedByCoord.out.bam_out
 
+```
 <br />  
+
+JACUSA2
+```ruby
+java -jar $JACUSA2_JAR call-1 -r Aligned.sortedByCoord.out.bam -p 10 -a D,M,Y,E:file=hg38-blacklist.v2_sort.bed:type=BED -s -m 20 -R GRCh38.chrom.fa -P RF-FIRSTSTRAND
+```
+<br />  
+
 
 
 # 3. Quantify RNA editing from STAR mapped bam files using a list of predefined list of sites (based on a predefined list of sites):
