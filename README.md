@@ -72,7 +72,7 @@ java -jar $JACUSA2_JAR call-1 -r Aligned.sortedByCoord.out.bam -p 10 -a D,M,Y,E:
 
 
 # 3. Quantify RNA editing from STAR mapped bam files using a list of predefined list of sites (based on a predefined list of sites):
-It is often of interest to quantify RNA editing sites based on a user defined list of sites. Samtools mpileup has the functionality to execute this task. Here we provide two perl scripts that will achieve this task. The only requirement is installing a recent version of samtools.  <br /> 
+It is often of interest to quantify RNA editing sites based on a user defined list of sites. Samtools mpileup has the functionality to execute this task. Here we provide two perl scripts that will achieve this task. The only requirement is installing a recent version of samtools. In the current study, we leveraged lists of known sites from these three resources: [REDIportal](https://academic.oup.com/nar/article/49/D1/D1012/5940507),[Cellular and genetic drivers of RNA editing variability in the human brain](https://www.nature.com/articles/s41467-022-30531-0), and [An atlas of human recoding sites](https://www.nature.com/articles/s41467-022-28841-4). <br /> 
 
 
 query_known_sites.pl= excute mpileup (samtools) to query a list of known editing sites.<br />
@@ -84,8 +84,7 @@ perl query_known_sites.pl CNS_A2G_events.txt SampleName.bam OutputFileName.txt
 <br />  
 
 # Helpful data files:
-CNS_A2G_events.txt = A predefined list of 166,215 A-to-I RNA editing sites detected within each cell population.<br /> 
-CNS_A2G_15221edits.txt = A matrix of 15,221 RNA editing sites we detected across all three cell populations.<br /> 
+CNS_A2G_events.txt = A predefined list of 166,215 A-to-I RNA editing sites detected within each cell population can be found [here](https://github.com/BreenMS/RNA-editing-in-CNS-cell-types).<br /> 
 
 <br />  
 
