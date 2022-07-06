@@ -17,8 +17,8 @@ Here we provide all computational code, supplemental tables, and intermediate da
 # 1. Compute AEI from a STAR mapped bam file:
 We used already available software from the [RNAEditingIndexer GitHub account](https://github.com/a2iEditing/RNAEditingIndexer) to compute an AEI based on a mapped bam file. The method is describe in the original publication, [Nat. Methods (2019)](https://pubmed.ncbi.nlm.nih.gov/31636457/). Here, we provide an example of bash shell script that executes the AEI on one sample. Requirements and parameters are described in full in the bash script.  <br /> 
  
+An example for computing AEI on human samples:
 ```ruby
-An example for running computing the AEI on human samples:
 RNAEditingIndex -d -f -o .
 --genes_expression ucscHg38GTExGeneExpression.bed.gz
 --refseq ucscHg38RefSeqCurated.bed.gz
@@ -26,9 +26,33 @@ RNAEditingIndex -d -f -o .
 -gf ucscHg38Genome.fa
 -rb ucscHg38Alu.bed.gz
 --genome UserProvided  --paired_end --stranded
-
 ```
 <br />  
+
+An example for computing AEI on macaque samples:
+```ruby
+RNAEditingIndex -d -f -o .
+--genes_expression RheMac8_selectedregions_expression_avg.bed.gz
+--refseq RheMac8_refSeq.bed.gz
+--snps rheMac8_common_0.01_SNVs.bed.gz
+-gf rheMac8.fa
+-rb RheMac8_SINE.bed.gz
+--genome UserProvided  
+```
+<br />  
+
+An example for computing AEI on mouse samples:
+```ruby
+RNAEditingIndex -d -f -o .
+--genes_expression ucscMM10GTExGeneExpression.bed.gz
+--refseq ucscMM10RefSeqCurated.bed.gz
+--snps ucscMM10CommonGenomicSNPs142.bed.gz
+-gf ucscMm10Genome.fa
+-rb ucscMM10SINE_B1_B2.bed.gz
+--genome UserProvided  --paired_end 
+```
+<br />  
+
 
 # 2. Quantify RNA editing sites from STAR mapped bam files using de novo methods:
 We used already available software from the [reditools v2.0 GitHub account](https://github.com/tizianoflati/reditools2.0) to quantify de novo RNA editing sites based on a STAR mapped bam file. The method is describe in the original publication, [BMC Bioinformatics (2020)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03562-x). Here, we provide an example of bash shell script that executes reditools 2.0 on one sample. Requirements and parameters are described in full in the bash script.  <br /> 
