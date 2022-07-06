@@ -94,19 +94,16 @@ We used already available software from the [RNA hyper-editing GitHub account](h
 
 <br />  
 
-# Supplemental Data Tables 1-9:
-Table S1. Alu editing index (AEI) and metadata across all samples used in the current study. <br /> 
-Table S2. Annotation of all prenatal, postnatal and commonly edited sites.<br /> 
-Table S3. Developmentally regulated RNA editing sites and annotations. <br /> 
-Table S4. Developmentally regulated RNA editing sites in independent datasets. <br /> 
-Table S5. RNA hyper-editing results across all datasets. <br /> 
-Table S6. RNA hyper-editing, splicing , and intron retention results. <br /> 
-Table S7. AEI, hyper-editing, and metadata for animal models of neurodevelopment. <br /> 
-Table S8. Top temporal edQTLs. <br /> 
-Table S9. GWAS-edQTL co-localization with edQTLs.  <br /> 
+# Supplemental Data Tables 1-10:
+Table S1. Alu editing index across all samples in the current study. Alu editing indexes and corresponding metadata for all samples in the current study. <br />  
+Table S2. Sample level summary of all high-quality RNA editing sites. Summary of all high-quality RNA editing sites detected and their genomic locations per sample in the DLPFC, forebrain and hindbrain. <br />  
+Table S3. Differentially regulated RNA editing sites across development. Summary statistics for sites that are dynamically regulated across brain development in the DLPFC, forebrain and hindbrain. We also provide the following information: 1) pathway enrichment; 2) disease-gene set enrichment; 3) associations between changes in editing levels and gene expression levels; 4) validation rates in hiPSCs and aging samples.  <br />  
+Table S4. miRNA binding affinity predictions to 3’UTRs. miRanda analysis output for editing sites overlapping miRNA seed regions and the resulting alignments and minimum free energy calculations for edited and unedited sequences.<br />  
+Table S5. Temporally regulated recoding sites. This table includes information temporally regulated recoding sites across human brain development, pathway level enrichment and validation in hiPSC models of corticogenesis.  <br />  
+Table S6. Temporally regulated RNA hyper-editing events. Summary statistics on RNA hyper-editing events per gene across development as well as per sample for all transcriptome samples in the current study. <br />  
+Table S7. Mechanistic investigation of RNA hyper-editing. Summary statistics for RNA hyper-editing sites that are predicted to be splice alternating via SpliceAI, occur in retained introns via SIRI.<br />  
+Table S8. RNA editing summary results in animal models of neurodevelopment. Summary statistics on the AEI and global RNA hyper-editing per sample in mouse and macaque models of neurodevelopment.  <br />  
+Table S9. Temporal predominate edQTLs. Summary statistics for leading editing-variant pairs (edQTLs), including constant, prenatal and postnatal predominate edQTLs. <br />  
+Table S10. GWAS-edQTL co-localization. Summary statistics of all significant GWAS risk loci that colocalize with edQTLs in the current study. <br />  
 
 
-<br />  
-
-
-# Additional data files:
