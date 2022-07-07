@@ -10,13 +10,16 @@ Posttranscriptional RNA modifications by adenosine-to-inosine (A-to-I) editing a
 
 Here we described the main computational code used to generate all results and figures in this body of work.  
 
-All RNA editing matrices and sample level RNA editing sites across the DLPFC, forebrain and hindbrain can be downloaded from [Synapse.org](https://www.synapse.org/#!Synapse:syn26434508/files/). An overview of our analytical approach: 
+All RNA editing matrices and sample level RNA editing sites across the DLPFC, forebrain and hindbrain can be downloaded from [Synapse.org](https://www.synapse.org/#!Synapse:syn26434508/files/).  
 
 # This work entails four main levels of analysis:
 1. Compute an Alu Editing Index (AEI) from a STAR mapped bam file  [(RNAEditingIndexer v1.0)](https://github.com/a2iEditing/RNAEditingIndexer)<br /> 
 2. Quantifying RNA editing sites from STAR mapped bam files using de novo methods [(reditools v2.0)](https://github.com/tizianoflati/reditools2.0) and [(JACUSA2)](https://github.com/dieterich-lab/JACUSA2)<br /> 
 3. Quantifying RNA editing from STAR mapped bam files using a list of predefined list of sites (code provided below)<br /> 
 4. Quantifying RNA hyper-editing sites from STAR unmapped fastq files [(method based on Porath et al., 2017)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1315-y)<br /> 
+
+An overview of our analytical approach:<br /> 
+<img width="500" alt="Screen Shot 2022-07-07 at 10 16 40 AM" src="https://user-images.githubusercontent.com/22500312/177795799-90edf08a-106e-44a6-a646-4569efdac555.png">
 
 # 1. Compute AEI from a STAR mapped bam file:
 We used already available software from the [RNAEditingIndexer GitHub account](https://github.com/a2iEditing/RNAEditingIndexer) to compute an AEI based on a mapped bam file. The method is describe in the original publication, [Nat. Methods (2019)](https://pubmed.ncbi.nlm.nih.gov/31636457/). Here, we provide an example of bash shell script that executes the AEI on one sample. Requirements and parameters are described in full in the bash script.  <br /> 
