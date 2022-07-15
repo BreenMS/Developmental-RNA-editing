@@ -2,7 +2,8 @@
 Winston H. Cuddleston*, Xuanjia Fan*, Laura Sloofman*, Lindsay Liang*, Enrico Mossotto, Kendall Moore, Sarah Zipkowitz, Minghui Wang, Bin Zhang, Jiebiao Wang, Nenad Sestan, Bernie Devlin, Kathryn Roeder, Stephan J. Sanders, Joseph D. Buxbaum, Michael S. Breen**
 
 *Co-first authors: WHC, XF, LS, LL<br /> 
-**Correspondence to: michael[dot] breen [at] mssm [dot] edu, @breenPsychgene
+**Correspondence to: michael[dot] breen [at] mssm [dot] edu<br /> 
+[@breenPsychgene](https://twitter.com/breenPsychGene)<br /> 
 
 Posttranscriptional RNA modifications by adenosine-to-inosine (A-to-I) editing are abundant in the brain, yet elucidating functional sites remains challenging. To bridge this gap, we expose spatiotemporal and genetically regulated A-to-I editing sites across prenatal and postnatal stages of human brain development. We identify more than 10,000 temporally regulated and spatially conserved editing sites that occur predominately in 3’UTRs and introns, as well as 37 sites that recode amino acids in protein coding regions with precise changes in editing levels across development. A massive expansion of RNA hyper-edited transcripts accumulates in the brain well into advanced age, stabilizing RNA secondary structures. These features are conserved in murine and non-human primate models of neurodevelopment. Further, we uncover thousands of cis-editing quantitative trait loci (edQTLs) with unique regulatory effects during prenatal and postnatal development. Collectively, this work offers a highly resolved atlas linking spatiotemporal variation in editing levels to genetic regulatory effects throughout distinct stages of brain maturation.  <br /> <br /> 
 
